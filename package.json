@@ -1,7 +1,7 @@
 {
-  "name": "strava-to-fitbit-web",
+  "name": "strava-to-fitbit",
   "version": "0.0.0",
-  "description": "Small description for strava-to-fitbit-web goes here",
+  "description": "Small description for strava-to-fitbit goes here",
   "license": "MIT",
   "author": "",
   "directories": {
@@ -34,7 +34,6 @@
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.14.1",
-    "ember-welcome-page": "^3.0.0",
     "loader.js": "^4.2.3"
   },
   "engines": {

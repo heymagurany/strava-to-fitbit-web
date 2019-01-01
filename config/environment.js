@@ -3,7 +3,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'strava-to-fitbit-web',
+    modulePrefix: 'strava-to-fitbit',
     environment,
     rootURL: '/',
     locationType: 'auto',
@@ -21,6 +21,17 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+      api: '',
+      strava: {
+        clientId: '23055',
+        redirectUri: 'https://strava-to-fitbit.azurewebsites.net/oauth/callback/strava',
+        scope: 'activity:read_all'
+      },
+      fitbit: {
+        clientId: '22CR6R',
+        redirectUri: 'https://strava-to-fitbit.azurewebsites.net/oauth/callback/fitbit',
+        scope: 'activity'
+      }
     }
   };
 
