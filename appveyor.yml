@@ -12,13 +12,14 @@ install:
   - yarn install --pure-lockfile
 
 build_script:
-  - ./node_modules/.bin/ember build --production
+  - yarn build --production
 
 test_script:
   - yarn test
 
 artifacts:
-  path: dist
+  - path: dist
+    name: web-app
 
 deploy:
   - provider: AzureBlob
@@ -27,4 +28,4 @@ deploy:
     storage_access_key:
       secure: cnnLRsY51oFK1Tsr4yZjglhX0qtWTK9/M0Pnv2yxLpo4u8Ncmdv9czGS2iOaY4BuK/GmsjVpmEFmiJk9Gs3LAlgRUymidAut00EdC0V3K7YE3swy+QWlN7u2spDyWVEc
     container: $web
-    artifact: dist
+    artifact: web-app
