@@ -12,7 +12,7 @@ install:
   - yarn install --pure-lockfile
 
 build_script:
-  - .node_modules/.bin/ember build --production
+  - ./node_modules/.bin/ember build --production
 
 test_script:
   - yarn test
