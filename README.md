@@ -4,6 +4,7 @@ This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
 ## Prerequisites
+[![Build status](https://ci.appveyor.com/api/projects/status/7pe5r8tpn0tbv66o?svg=true)](https://ci.appveyor.com/project/heymagurany/strava-to-fitbit-web)
 
 You will need the following things properly installed on your computer.
 
