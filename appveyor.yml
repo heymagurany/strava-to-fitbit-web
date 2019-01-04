@@ -22,3 +22,15 @@ test_script:
 
 # Don't actually build.
 build: off
+
+artifacts:
+  path: dist
+
+deploy:
+  - provider: AzureBlob
+    storage_account_name:
+      secure: KmdsylkGn18n4J5Q7CIvEg==
+    storage_access_key:
+      secure: cnnLRsY51oFK1Tsr4yZjglhX0qtWTK9/M0Pnv2yxLpo4u8Ncmdv9czGS2iOaY4BuK/GmsjVpmEFmiJk9Gs3LAlgRUymidAut00EdC0V3K7YE3swy+QWlN7u2spDyWVEc
+    container: $web
+    artifact: dist
