@@ -12,7 +12,7 @@ install:
   - yarn install --pure-lockfile
 
 build_script:
-  - yarn build --production
+  - yarn build --environment=production
 
 test_script:
   - yarn test
@@ -29,3 +29,5 @@ deploy:
       secure: cnnLRsY51oFK1Tsr4yZjglhX0qtWTK9/M0Pnv2yxLpo4u8Ncmdv9czGS2iOaY4BuK/GmsjVpmEFmiJk9Gs3LAlgRUymidAut00EdC0V3K7YE3swy+QWlN7u2spDyWVEc
     container: $web
     artifact: web-app
+    unzip: true
+    set_content_type: true
